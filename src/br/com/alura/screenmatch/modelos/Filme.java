@@ -1,5 +1,7 @@
 package br.com.alura.screenmatch.modelos;
 
+import org.w3c.dom.ls.LSOutput;
+
 public class Filme {
     private String nome;
     private String categoria;

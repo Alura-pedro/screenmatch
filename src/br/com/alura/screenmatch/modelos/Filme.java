@@ -1,8 +1,8 @@
 package br.com.alura.screenmatch.modelos;
 
-import org.w3c.dom.ls.LSOutput;
+import br.com.alura.screenmatch.calculos.Classificavel;
 
-public class Filme extends Titulo {
+public class Filme extends Titulo implements Classificavel {
     private String diretor;
 
     public String getDiretor() {
@@ -11,5 +11,10 @@ public class Filme extends Titulo {
 
     public void setDiretor(String diretor) {
         this.diretor = diretor;
+    }
+
+    @Override
+    public int getTotalDeAvaliacoes() {
+        return super.getTotalDeAvaliacoes();
     }
 }

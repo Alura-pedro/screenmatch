@@ -1,3 +1,4 @@
+import br.com.alura.screenmatch.calculos.FiltroRecomendacao;
 import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
 import br.com.alura.screenmatch.calculos.CalculadoraDeTempo;
@@ -31,5 +32,8 @@ public class Main {
         calculadora.inclui(filmeUm);
         calculadora.inclui(lost);
         System.out.printf("\n %d", calculadora.getTempoTotal());
+
+        FiltroRecomendacao filtro = new FiltroRecomendacao();
+        filtro.filtra(filmeUm);
     }
 }

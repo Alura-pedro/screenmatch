@@ -7,13 +7,21 @@ public class Serie extends Titulo implements Classificavel {
     private int episodiosPorTemporada;
     private boolean ativa;
     private int minutosPorEpisodio;
-    private int duracaoEmMinutos;
 
-    public int getTemporadas(){
+    public Serie(String nome, String categoria, int anoDeLancamento, boolean incluidoNoPlano, double somaDasAvaliacoes, int totalDeAvaliacoes, int duracaoEmMinutos, int temporadas, boolean ativa, int episodiosPorTemporada, int minutosPorEpisodio) {
+        super(nome, categoria, anoDeLancamento, incluidoNoPlano, somaDasAvaliacoes, totalDeAvaliacoes, duracaoEmMinutos);
+        this.temporadas = temporadas;
+        this.episodiosPorTemporada = episodiosPorTemporada;
+        this.ativa = ativa;
+        this.minutosPorEpisodio = minutosPorEpisodio;
+    }
+
+
+    public int getTemporadas() {
         return temporadas;
     }
 
-    public void setTemporadas(int temporadas){
+    public void setTemporadas(int temporadas) {
         this.temporadas = temporadas;
     }
 

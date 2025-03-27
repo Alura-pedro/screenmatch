@@ -9,6 +9,16 @@ public class Titulo {
     private int totalDeAvaliacoes;
     private int duracaoEmMinutos;
 
+    public Titulo(String nome, String categoria, int anoDeLancamento, boolean incluidoNoPlano, double somaDasAvaliacoes, int totalDeAvaliacoes, int duracaoEmMinutos) {
+        this.nome = nome;
+        this.categoria = categoria;
+        this.anoDeLancamento = anoDeLancamento;
+        this.incluidoNoPlano = incluidoNoPlano;
+        this.somaDasAvaliacoes = somaDasAvaliacoes;
+        this.totalDeAvaliacoes = totalDeAvaliacoes;
+        this.duracaoEmMinutos = duracaoEmMinutos;
+    }
+
     public void setNome(String nome) {
         this.nome = nome;
     }

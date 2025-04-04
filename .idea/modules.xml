@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/desafio_final/desafio_final.iml" filepath="$PROJECT_DIR$/desafio_final/desafio_final.iml" />
       <module fileurl="file://$PROJECT_DIR$/screenmatch.iml" filepath="$PROJECT_DIR$/screenmatch.iml" />
       <module fileurl="file://$PROJECT_DIR$/testes/testes.iml" filepath="$PROJECT_DIR$/testes/testes.iml" />
     </modules>

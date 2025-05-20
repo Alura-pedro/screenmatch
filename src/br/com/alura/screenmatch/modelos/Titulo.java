@@ -9,13 +9,13 @@ public class Titulo {
     private int totalDeAvaliacoes;
     private int duracaoEmMinutos;
 
-    public Titulo(String nome, String categoria, int anoDeLancamento, boolean incluidoNoPlano, double somaDasAvaliacoes, int totalDeAvaliacoes, int duracaoEmMinutos) {
+    public Titulo(String nome, String categoria, int anoDeLancamento, boolean incluidoNoPlano, int duracaoEmMinutos) {
         this.nome = nome;
         this.categoria = categoria;
         this.anoDeLancamento = anoDeLancamento;
         this.incluidoNoPlano = incluidoNoPlano;
-        this.somaDasAvaliacoes = somaDasAvaliacoes;
-        this.totalDeAvaliacoes = totalDeAvaliacoes;
+        this.somaDasAvaliacoes = 0;
+        this.totalDeAvaliacoes = 0;
         this.duracaoEmMinutos = duracaoEmMinutos;
     }
 
@@ -52,6 +52,9 @@ public class Titulo {
     public void exibeFichaTecnica(){
         System.out.printf("Nome do Filme: %s", nome);
         System.out.printf("\nAno de lançamento: %d", anoDeLancamento);
+        System.out.printf("\nCategoria: %s", categoria);
+        System.out.printf("\nIncluido no plano: %s", ((incluidoNoPlano) ? "Sim" : "Não"));
+        System.out.printf("\nDuração em minutos: %d min", duracaoEmMinutos);
     }
 
     public void avalia(double nota){
@@ -64,6 +67,10 @@ public class Titulo {
     }
 
     public double pegaMedia(){
+        if (totalDeAvaliacoes == 0) {
+        return 0.0; }
+
         return somaDasAvaliacoes / totalDeAvaliacoes;
+
     }
 }

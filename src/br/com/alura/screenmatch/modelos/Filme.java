@@ -5,8 +5,8 @@ import br.com.alura.screenmatch.calculos.Classificavel;
 public class Filme extends Titulo implements Classificavel {
     private String diretor;
 
-    public Filme(String nome, String categoria, int anoDeLancamento, boolean incluidoNoPlano, double somaDasAvaliacoes, int totalDeAvaliacoes, int duracaoEmMinutos, String diretor) {
-        super(nome, categoria, anoDeLancamento, incluidoNoPlano, somaDasAvaliacoes, totalDeAvaliacoes, duracaoEmMinutos);
+    public Filme(String nome, String categoria, int anoDeLancamento, boolean incluidoNoPlano, int duracaoEmMinutos, String diretor) {
+        super(nome, categoria, anoDeLancamento, incluidoNoPlano, duracaoEmMinutos);
         this.diretor = diretor;
     }
 
@@ -17,6 +17,13 @@ public class Filme extends Titulo implements Classificavel {
 
     public void setDiretor(String diretor) {
         this.diretor = diretor;
+    }
+
+    @Override
+    public void exibeFichaTecnica() {
+        super.exibeFichaTecnica();
+        System.out.printf("\nDiretor: %s", diretor);
+        System.out.printf("\nClassificação: %d", getClassificacao());
     }
 
     @Override

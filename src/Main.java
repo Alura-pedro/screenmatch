@@ -3,20 +3,21 @@ import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
 import br.com.alura.screenmatch.calculos.CalculadoraDeTempo;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
-        Filme filmeUm = new Filme("Carros", "Animação", 2008, true, 10, 4, 105, "Tarantino");
-        Serie lost = new Serie("Lost", "Suspense", 2007, true, 10, 3, 1000, 10, true, 10, 50);
-        CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
+        ArrayList<Filme> listaDeFilmes = new ArrayList<>();
 
-        System.out.printf("A série %s tem uma duração de %d minutos", lost.getNome(), lost.getDuracaoEmMinutos());
-        System.out.printf("\nO filme %s tem uma duração de %d minutos", filmeUm.getNome(), filmeUm.getDuracaoEmMinutos());
+        var filme1 = new Filme("Dogville", "Aventura", 2003, true, 200, "Brad Pitt");
+        var filme2 = new Filme("Thunderbolts", "Heróis", 2025, false, 240, "Irmãos Krasinski");
+        var filme3 = new Filme("Os Incriveis 2", "Desenho", 2019, true, 190, "David Wallace");
 
-        calculadora.inclui(filmeUm);
-        calculadora.inclui(lost);
-        System.out.printf("\n %d", calculadora.getTempoTotal());
+        listaDeFilmes.add(filme1);
+        listaDeFilmes.add(filme2);
+        listaDeFilmes.add(filme3);
 
-        FiltroRecomendacao filtro = new FiltroRecomendacao();
-        filtro.filtra(filmeUm);
+        System.out.println("Nome do filme: " + listaDeFilmes.get(0).getDiretor());
     }
 }

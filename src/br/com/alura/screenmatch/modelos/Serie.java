@@ -8,8 +8,8 @@ public class Serie extends Titulo implements Classificavel {
     private boolean ativa;
     private int minutosPorEpisodio;
 
-    public Serie(String nome, String categoria, int anoDeLancamento, boolean incluidoNoPlano, double somaDasAvaliacoes, int totalDeAvaliacoes, int duracaoEmMinutos, int temporadas, boolean ativa, int episodiosPorTemporada, int minutosPorEpisodio) {
-        super(nome, categoria, anoDeLancamento, incluidoNoPlano, somaDasAvaliacoes, totalDeAvaliacoes, duracaoEmMinutos);
+    public Serie(String nome, String categoria, int anoDeLancamento, boolean incluidoNoPlano, int duracaoEmMinutos, int temporadas, boolean ativa, int episodiosPorTemporada, int minutosPorEpisodio) {
+        super(nome, categoria, anoDeLancamento, incluidoNoPlano, duracaoEmMinutos);
         this.temporadas = temporadas;
         this.episodiosPorTemporada = episodiosPorTemporada;
         this.ativa = ativa;

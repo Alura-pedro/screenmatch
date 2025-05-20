@@ -18,6 +18,8 @@ public class Main {
         listaDeFilmes.add(filme2);
         listaDeFilmes.add(filme3);
 
+        System.out.println("Tamnho da lista: " + listaDeFilmes.size());
         System.out.println("Nome do filme: " + listaDeFilmes.get(0).getDiretor());
+        System.out.println(listaDeFilmes);
     }
 }

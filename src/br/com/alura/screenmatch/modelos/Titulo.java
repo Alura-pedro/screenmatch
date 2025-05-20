@@ -41,6 +41,10 @@ public class Titulo {
         this.incluidoNoPlano = incluidoNoPlano;
     }
 
+    public int getAnoDeLancamento() {
+        return anoDeLancamento;
+    }
+
     public void setAnoDeLancamento(int anoDeLancamento) {
         this.anoDeLancamento = anoDeLancamento;
     }

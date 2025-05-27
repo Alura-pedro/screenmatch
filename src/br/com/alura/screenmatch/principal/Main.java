@@ -1,9 +1,7 @@
-import br.com.alura.screenmatch.calculos.FiltroRecomendacao;
-import br.com.alura.screenmatch.modelos.Filme;
-import br.com.alura.screenmatch.modelos.Serie;
-import br.com.alura.screenmatch.calculos.CalculadoraDeTempo;
+package br.com.alura.screenmatch.principal;
 
-import java.lang.reflect.Array;
+import br.com.alura.screenmatch.modelos.Filme;
+
 import java.util.ArrayList;
 
 public class Main {
@@ -21,5 +19,7 @@ public class Main {
         System.out.println("Tamnho da lista: " + listaDeFilmes.size());
         System.out.println("Nome do filme: " + listaDeFilmes.get(0).getDiretor());
         System.out.println(listaDeFilmes);
+
+
     }
 }

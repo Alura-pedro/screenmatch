@@ -9,14 +9,13 @@ public class Titulo {
     private int totalDeAvaliacoes;
     private int duracaoEmMinutos;
 
-    public Titulo(String nome, String categoria, int anoDeLancamento, boolean incluidoNoPlano, int duracaoEmMinutos) {
+    public Titulo(String nome, String categoria, int anoDeLancamento, boolean incluidoNoPlano) {
         this.nome = nome;
         this.categoria = categoria;
         this.anoDeLancamento = anoDeLancamento;
         this.incluidoNoPlano = incluidoNoPlano;
         this.somaDasAvaliacoes = 0;
         this.totalDeAvaliacoes = 0;
-        this.duracaoEmMinutos = duracaoEmMinutos;
     }
 
     public void setNome(String nome) {
@@ -75,6 +74,5 @@ public class Titulo {
         return 0.0; }
 
         return somaDasAvaliacoes / totalDeAvaliacoes;
-
     }
 }

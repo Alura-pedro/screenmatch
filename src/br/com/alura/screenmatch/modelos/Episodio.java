@@ -8,11 +8,10 @@ public class Episodio implements Classificavel {
     private Serie serie;
     private int totalVizualizacoes;
 
-    public Episodio(int numero, String nome, Serie serie, int totalVizualizacoes) {
+    public Episodio(int numero, String nome, Serie serie) {
         this.numero = numero;
         this.nome = nome;
         this.serie = serie;
-        this.totalVizualizacoes = totalVizualizacoes;
     }
 
     public int getTotalVizualizacoes() {
